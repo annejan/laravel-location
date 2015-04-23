@@ -78,7 +78,7 @@ return [
 	|
 	*/
 
-	'key' => env('APP_KEY', 'SomeRandomString'),
+	'key' => env('APP_KEY', 'NotSoRandomString'),
 
 	'cipher' => MCRYPT_RIJNDAEL_128,
 
@@ -146,7 +146,7 @@ return [
 		'App\Providers\RouteServiceProvider',
 
 		'Laravel\Socialite\SocialiteServiceProvider',
-
+		'Bernardino\EasyAuthenticator\EasyAuthenticatorServiceProvider',
 	],
 
 	/*
