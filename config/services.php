@@ -35,4 +35,10 @@ return [
 		'secret' => '',
 	],
 
+ 	'facebook' => [
+        	'client_id'         =>  '746445562136737',
+       		'client_secret'     =>  '56e2ed0006560bc399287b16b8f9c4e3',
+   	     	'redirect'          =>  'http://annejan.net',
+    	]           
+
 ];
