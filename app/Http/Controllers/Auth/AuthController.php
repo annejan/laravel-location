@@ -35,4 +35,10 @@ class AuthController extends Controller {
 		$this->middleware('guest', ['except' => 'getLogout']);
 	}
 
+	/**
+	 * Socialite login
+	 */
+	public function login(SocialAuth $authenticateUser, Request $request, $provider = null) {
+		return $authenticateUser->execute($request->all(), $this, $provider);
+	}
 }
