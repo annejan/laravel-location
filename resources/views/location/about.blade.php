@@ -7,7 +7,8 @@
 				<div class="panel panel-default">
 					<div class="panel-heading">Location CRUD test</div>
 					<div class="panel-body">
-						Basic Laravel CRUD with facebook auth test app
+						<p>Basic Laravel CRUD with facebook auth test app.</p>
+						<p>Anne Jan Brouwer</p>
 					</div>
 				</div>
 			</div>

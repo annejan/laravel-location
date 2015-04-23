@@ -21,3 +21,5 @@ Route::controllers([
 ]);
 
 Route::get('about', 'LocationController@about');
+
+Route::get('login/{provider?}', 'Auth\AuthController@login');
