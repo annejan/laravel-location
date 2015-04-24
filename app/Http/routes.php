@@ -20,7 +20,7 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 
-Route::model('location', 'Location');
+Route::model('locations', 'Locations');
 
 Route::bind('locations', function($value, $route) {
 	return App\Location::whereId($value)->first();
