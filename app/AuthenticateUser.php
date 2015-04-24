@@ -26,7 +26,7 @@ class AuthenticateUser {
         $user = $this->users->findByNameOrCreate($this->getUser());
         
         $this->auth->login($user, true);
-        
+       
         return $listener->userAuthenticated($user);
     }
     
