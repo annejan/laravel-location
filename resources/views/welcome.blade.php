@@ -40,8 +40,9 @@
 	<body>
 		<div class="container">
 			<div class="content">
-				<div class="title"><a href="/home">Laravel 5</a></div>
+				<div class="title"><a href="/home">Laravel Location</a></div>
 				<div class="quote">{{ Inspiring::quote() }}</div>
+				<div>Test application showing Facebook authentication and basic CRUD functionality.</div>
 			</div>
 		</div>
 	</body>
