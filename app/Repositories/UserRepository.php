@@ -11,7 +11,7 @@ class UserRepository {
            // 'name' => $userData->nickname,
             'name' => $userData->name,
             'email' => $userData->email,
-	    'password' => substr(md5(rand()), 0, 7) // bit lame
+	    'password' => 'fixedkey' // bit lame
         ]);
     
     }
