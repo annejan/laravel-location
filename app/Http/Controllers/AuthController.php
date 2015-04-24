@@ -2,14 +2,14 @@
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-
+use App\AuthenticateUser;
 use Illuminate\Http\Request;
 
 class AuthController extends Controller {
 
-	public function login() 
+	public function login(AuthenticateUser $authenticateUser, Request $request) 
 	{
-                return \Socialite::with('facebook')->redirect();
+               $authenticateUser->execute($request->has('code'));
 	}
 
 }
