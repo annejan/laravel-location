@@ -9,13 +9,13 @@ class AuthController extends Controller {
 
 	public function login(AuthenticateUser $authenticateUser, Request $request) 
 	{
-               $authenticateUser->execute($request->has('code'), $this);
+             return $authenticateUser->execute($request->has('code'), $this);
 	}
 
-	public function userAuthenticated($user) {
-
-	    header("Location: /locations");
-	    exit();
+	public function userAuthenticated($user) 
+	{
+	   // header("Location: /locations");
+	   // exit();
 	    // the official one does not work for some reason.	
             return redirect('/locations');
 	

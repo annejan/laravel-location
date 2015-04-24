@@ -32,7 +32,7 @@ class AuthenticateUser {
     
     public function getToken() 
     {
-        return var_dump($this->socialite->driver('facebook')->redirect());
+        return $this->socialite->driver('facebook')->redirect();
     }
 
     public function getUser()
