@@ -27,7 +27,7 @@ class AuthenticateUser {
         
         $this->auth->login($user, true);
         
-        $listener->userAuthenticated($user);
+        return $listener->userAuthenticated($user);
     }
     
     public function getToken() 
