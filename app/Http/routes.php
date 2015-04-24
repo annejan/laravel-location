@@ -20,10 +20,10 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 
-Route::model('locations', 'Location');
+Route::model('location', 'Location');
 
 Route::bind('locations', function($value, $route) {
-	return App\Location::whereSlug($value)->first();
+	return App\Location::whereId($value)->first();
 });
 
 Route::resource('locations', 'LocationController');

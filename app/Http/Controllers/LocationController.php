@@ -41,10 +41,10 @@ class LocationController extends Controller {
 	/**
 	 * Display the specified resource.
 	 *
-	 * @param  Locations  $location
+	 * @param \App\Location  $location
 	 * @return Response
 	 */
-	public function show(Locations  $location)
+	public function show(\App\Location $location)
 	{
 		return view('locations.show', compact('location'));
 	}
@@ -52,10 +52,10 @@ class LocationController extends Controller {
 	/**
 	 * Show the form for editing the specified resource.
 	 *
-	 * @param  Locations  $location
+	 * @param \App\Location  $location
 	 * @return Response
 	 */
-	public function edit(Locations  $location)
+	public function edit(\App\Location  $location)
 	{
                 return view('locations.show', compact('location'));
 	}
