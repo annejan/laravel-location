@@ -15,7 +15,7 @@ class AuthController extends Controller {
 	public function userAuthenticated($user) {
 
 	    header("Location: /locations");
-
+	    exit();
 	    // the official one does not work for some reason.	
             return redirect('/locations');
 	
