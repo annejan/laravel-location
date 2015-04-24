@@ -14,7 +14,8 @@ class LocationController extends Controller {
 	 */
 	public function index()
 	{
-		//
+                $locations = \App\Location::all();
+		return view('locations.index', compact('locations'));
 	}
 
 	/**
@@ -40,32 +41,32 @@ class LocationController extends Controller {
 	/**
 	 * Display the specified resource.
 	 *
-	 * @param  int  $id
+	 * @param  Locations  $location
 	 * @return Response
 	 */
-	public function show($id)
+	public function show(Locations  $location)
 	{
-		//
+		return view('locations.show', compact('location'));
 	}
 
 	/**
 	 * Show the form for editing the specified resource.
 	 *
-	 * @param  int  $id
+	 * @param  Locations  $location
 	 * @return Response
 	 */
-	public function edit($id)
+	public function edit(Locations  $location)
 	{
-		//
+                return view('locations.show', compact('location'));
 	}
 
 	/**
 	 * Update the specified resource in storage.
 	 *
-	 * @param  int  $id
+	 * @param  Locations  $location
 	 * @return Response
 	 */
-	public function update($id)
+	public function update(Locations  $location)
 	{
 		//
 	}
@@ -73,10 +74,10 @@ class LocationController extends Controller {
 	/**
 	 * Remove the specified resource from storage.
 	 *
-	 * @param  int  $id
+	 * @param  Locations  $location
 	 * @return Response
 	 */
-	public function destroy($id)
+	public function destroy(Locations  $location)
 	{
 		//
 	}
