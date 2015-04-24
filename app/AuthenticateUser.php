@@ -17,7 +17,7 @@ class AuthenticateUser {
         $this->auth = $auth;
     }
     
-    public function execute($hasToken)
+    public function execute($hasToken, $listener)
     {
         if (!$hasToken) {
             return $this->getToken();
@@ -26,12 +26,13 @@ class AuthenticateUser {
         $user = $this->users->findByNameOrCreate($this->getUser());
         
         $this->auth->login($user, true);
-
+        
+        $listener->userAuthenticated($user);
     }
     
     public function getToken() 
     {
-        return $this->socialite->driver('facebook')->redirect();
+        return var_dump($this->socialite->driver('facebook')->redirect());
     }
 
     public function getUser()
