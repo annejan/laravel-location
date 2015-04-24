@@ -12,4 +12,8 @@
             @endforeach
         </ul>
     @endif
+    
+     <p>
+        {!! link_to_route('locations.create', 'Add Location') !!}
+    </p>
 @endsection
