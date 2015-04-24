@@ -54,6 +54,7 @@
 								<button type="submit" class="btn btn-primary">
 									Register
 								</button>
+                                                                <a class="btn btn-primary" href="/login">Login with Facebook</a>
 							</div>
 						</div>
 					</form>

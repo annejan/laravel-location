@@ -27,3 +27,14 @@ Route::bind('locations', function($value, $route) {
 });
 
 Route::resource('locations', 'LocationController');
+
+/**
+
+GET /locations
+GET /locations/:id
+PUT /locations/:id
+POST /locations
+
+**/
+
+Route::get('login', 'AuthController@login');

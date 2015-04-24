@@ -146,7 +146,7 @@ return [
 		'App\Providers\RouteServiceProvider',
 
 		'Illuminate\Html\HtmlServiceProvider',
-		
+		'Laravel\Socialite\SocialiteServiceProvider',
 	],
 
 	/*
@@ -195,7 +195,8 @@ return [
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
                 'Form'      => 'Illuminate\Html\FormFacade', 
-                'HTML'      => 'Illuminate\Html\HtmlFacade'
+                'HTML'      => 'Illuminate\Html\HtmlFacade',
+                'Socialite' => 'Laravel\Socialite\Facades\Socialite',
 	],
 
 ];
